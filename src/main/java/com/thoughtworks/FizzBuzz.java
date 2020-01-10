@@ -16,11 +16,12 @@ public class FizzBuzz {
     public static String fizzBuzz(int i) {
         String result = "";
 
-        if(isContains3(i)){
-            return FIZZ;
+        if(!isContains5(i)){
+            if(isContains3(i)){
+                return FIZZ;
+            }
+            if (isDivBy3(i)) result += FIZZ;
         }
-
-        if (isDivBy3(i)) result += FIZZ;
 
         if (isDivBy5(i)) result += BUZZ;
 
@@ -44,4 +45,9 @@ public class FizzBuzz {
     private static boolean isContains3(int i) {
         return String.valueOf(i).contains("3");
     }
+
+    private static boolean isContains5(int i) {
+        return String.valueOf(i).contains("5");
+    }
+
 }
