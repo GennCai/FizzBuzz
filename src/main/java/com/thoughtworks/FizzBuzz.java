@@ -16,6 +16,15 @@ public class FizzBuzz {
     public static String fizzBuzz(int i) {
         String result = "";
 
+        if(isContains7(i)){
+            if(isContains3(i)){
+                return FIZZ;
+            }
+            if (isDivBy3(i)) result += FIZZ;
+            if (isDivBy7(i)) result += WHIZZ;
+            return result.equals("") ?  String.valueOf(i) : result;
+        }
+
         if(!isContains5(i)){
             if(isContains3(i)){
                 return FIZZ;
@@ -48,6 +57,10 @@ public class FizzBuzz {
 
     private static boolean isContains5(int i) {
         return String.valueOf(i).contains("5");
+    }
+
+    private static boolean isContains7(int i) {
+        return String.valueOf(i).contains("7");
     }
 
 }

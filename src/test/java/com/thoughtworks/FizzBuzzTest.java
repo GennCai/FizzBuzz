@@ -62,4 +62,28 @@ public class FizzBuzzTest {
             Assert.assertEquals(String.valueOf(target), fizzBuzz(target));
         }
     }
+
+    @Test
+    public void number_contains_7_test() {
+        int[] fizzExamples = {27, 57, 75};
+        int[] fizzWhizzExamples = {147, 567, 672};
+        int[] whizzExamples = {70, 77, 175};
+        int[] numberExamples = {170, 275, 470};
+
+        for (int target : fizzExamples) {
+            Assert.assertEquals(FIZZ, fizzBuzz(target));
+        }
+
+        for (int target : fizzWhizzExamples) {
+            Assert.assertEquals(FIZZ+WHIZZ, fizzBuzz(target));
+        }
+
+        for (int target : whizzExamples) {
+            Assert.assertEquals(WHIZZ, fizzBuzz(target));
+        }
+
+        for (int target : numberExamples) {
+            Assert.assertEquals(String.valueOf(target), fizzBuzz(target));
+        }
+    }
 }
