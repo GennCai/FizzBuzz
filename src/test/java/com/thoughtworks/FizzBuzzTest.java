@@ -16,4 +16,17 @@ public class FizzBuzzTest {
         Assert.assertEquals(BUZZ, fizzBuzz(5));
         Assert.assertEquals(WHIZZ, fizzBuzz(7));
     }
+
+    @Test
+    public void common_multiple_3_5_7_test() {
+        int commonMultiple_3_5 = 3*5;
+        int commonMultiple_3_7 = 3*7;
+        int commonMultiple_5_7 = 5*7;
+        int commonMultiple_3_5_7 = 3*5*7;
+
+        Assert.assertEquals(FIZZ+BUZZ, fizzBuzz(commonMultiple_3_5));
+        Assert.assertEquals(FIZZ+WHIZZ, fizzBuzz(commonMultiple_3_7));
+        Assert.assertEquals(BUZZ+WHIZZ, fizzBuzz(commonMultiple_5_7));
+        Assert.assertEquals(FIZZ+BUZZ+WHIZZ, fizzBuzz(commonMultiple_3_5_7));
+    }
 }

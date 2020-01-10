@@ -14,14 +14,15 @@ public class FizzBuzz {
     }
 
     public static String fizzBuzz(int i) {
+        String result = "";
 
-        if (isDivBy3(i)) return FIZZ;
+        if (isDivBy3(i)) result += FIZZ;
 
-        if (isDivBy5(i)) return BUZZ;
+        if (isDivBy5(i)) result += BUZZ;
 
-        if (isDivBy7(i)) return WHIZZ;
+        if (isDivBy7(i)) result += WHIZZ;
 
-        return String.valueOf(i);
+        return result.equals("") ?  String.valueOf(i) : result;
     }
 
     public static boolean isDivBy3(int i) {
