@@ -29,15 +29,15 @@ public class FizzBuzz {
         return result.equals("") ?  String.valueOf(i) : result;
     }
 
-    public static boolean isDivBy3(int i) {
+    private static boolean isDivBy3(int i) {
         return i % 3 == 0;
     }
 
-    public static boolean isDivBy5(int i) {
+    private static boolean isDivBy5(int i) {
         return i % 5 == 0;
     }
 
-    public static boolean isDivBy7(int i) {
+    private static boolean isDivBy7(int i) {
         return i % 7 == 0;
     }
 
