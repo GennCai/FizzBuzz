@@ -3,10 +3,7 @@ package com.thoughtworks;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static com.thoughtworks.FizzBuzz.fizzBuzz;
-import static com.thoughtworks.FizzBuzz.FIZZ;
-import static com.thoughtworks.FizzBuzz.BUZZ;
-import static com.thoughtworks.FizzBuzz.WHIZZ;
+import static com.thoughtworks.FizzBuzz.*;
 
 public class FizzBuzzTest {
 
@@ -86,4 +83,23 @@ public class FizzBuzzTest {
             Assert.assertEquals(String.valueOf(target), fizzBuzz(target));
         }
     }
+
+//    //is_only_contains_3_7
+//    //is_contains_3_5_7
+//    @Test
+//    public void is_only_contains_3() {
+//
+//    }
+//
+//    // is_only_contains_3_5
+//    @Test
+//    public void is_only_contains_5() {
+//
+//    }
+//
+//    //is_only_contains_5_7
+//    @Test
+//    public void is_only_contains_7() {
+//
+//    }
 }
